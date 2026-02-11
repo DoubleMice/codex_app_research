@@ -1977,15 +1977,6 @@ const m = {
   buffer: "",
   cwd: i,
   shell: f,
-  attached: !1,
-  conversationId: n.conversationId,
-  preserveOnOwnerDestroy: n.preserveOnOwnerDestroy ?? !1,
-};
-```
-  owner: e,
-  buffer: "",
-  cwd: i,
-  shell: f,
   attached: false,
   conversationId: n.conversationId,
   preserveOnOwnerDestroy: n.preserveOnOwnerDestroy ?? false,
