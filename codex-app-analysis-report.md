@@ -54,17 +54,17 @@
 
 ### 第三部分：深度逆向分析详情
 
-26. [main-BLcwFbOH.js 逆向](#26-main-blcwfboh-js-逆向)
-27. [worker-C_GFIvBQ.js 逆向](#27-worker-c_gfivbq-js-逆向)
-28. [preload 脚本逆向](#28-preload-脚本逆向)
-29. [codex CLI 二进制逆向](#29-codex-cli-二进制逆向)
-30. [sparkle.node 原生模块逆向](#30-sparkle-node-原生模块逆向)
-31. [pty.node 终端原生模块逆向](#31-pty-node-终端原生模块逆向)
-32. [better_sqlite3.node 数据库模块逆向](#32-better_sqlite3-node-数据库模块逆向)
+26. [main-BLcwFbOH.js 逆向分析](#26-main-blcwfbohjs-逆向分析)
+27. [worker-C_GFIvBQ.js 逆向分析](#27-worker-c_gfivbqjs-逆向分析)
+28. [preload.js 逆向分析](#28-preloadjs-逆向分析)
+29. [codex CLI 二进制逆向分析](#29-codex-cli-二进制逆向分析)
+30. [sparkle.node 原生模块逆向](#30-sparklenode-原生模块逆向)
+31. [pty.node 终端原生模块逆向](#31-ptynode-终端原生模块逆向)
+32. [better_sqlite3.node 数据库模块逆向](#32-better_sqlite3node-数据库模块逆向)
 33. [JS 代码混淆分析](#33-js-代码混淆分析)
 34. [App Server 协议消息格式逆向](#34-app-server-协议消息格式逆向)
 35. [Seatbelt 沙箱策略逆向](#35-seatbelt-沙箱策略逆向)
-36. [package.json 依赖分析](#36-package-json-依赖分析)
+36. [package.json 依赖分析](#36-packagejson-依赖分析)
 37. [渲染进程入口分析](#37-渲染进程入口分析)
 38. [硬编码 URL 分析](#38-硬编码-url-分析)
 39. [Electron 窗口配置](#39-electron-窗口配置)
@@ -2296,16 +2296,16 @@ Windows: Restricted Token
 
 ---
 
-## 总结
+### 总结
 
-### 核心架构特点
+#### 核心架构特点
 
 1. **混合技术栈** - Electron + Rust
 2. **多进程模型** - Main/Renderer/Worker
 3. **插件化设计** - Skills + MCP
 4. **沙箱隔离** - 多层安全机制
 
-### 可借鉴点
+#### 可借鉴点
 
 - Worker 分离耗时操作
 - Rust 处理性能敏感逻辑
